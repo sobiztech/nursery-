@@ -19,4 +19,7 @@ Route::get('/', function () {
 Route::get('/gallary', function () {
     return view('pages.gallary');
 });
+Route::get('/application', function () {
+    return view('pages.application');
+});
 

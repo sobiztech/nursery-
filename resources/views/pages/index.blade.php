@@ -966,37 +966,7 @@
 								</div>
 								<div class="col-xl-6 col-md-12 col-sm-12">
 									<div class="">
-										<form class="form-horizontal  m-t-20 row" action="index.html">
-											<div class="col-xl-6">
-												<div class="form-group">
-													<input class="form-control" type="text" required="" placeholder="முதல் பெயர்">
-												</div>
-											</div>
-											<div class="col-xl-6">
-												<div class="form-group">
-													<input class="form-control" type="text" required="" placeholder="கடைசி பெயர்">
-												</div>
-											</div>
-											<div class="col-xl-6">
-												<div class="form-group">
-													<input class="form-control" type="email" required="" placeholder="மின்னஞ்சல்">
-												</div>
-											</div>
-											<div class="col-xl-6">
-												<div class="form-group">
-													<input class="form-control" type="number" required="" placeholder="தொலைபேசி">
-												</div>
-											</div>
-											<div class="col-xl-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="5">உங்கள் கருத்துக்கள்</textarea>
-												</div>
-											</div>
-											<div class="">
-												<a href="javascript:void(0)" class="btn btn-pill btn-primary btn-w-sm py-2  waves-effect waves-light">அனுப்பு</a>
-
-											</div>
-										</form>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15729.238065742084!2d79.9356223698399!3d9.7398277807206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe52e98d542dcb%3A0x8bad045e1da0295f!2sJaffna%20College!5e0!3m2!1sen!2slk!4v1717053484301!5m2!1sen!2slk" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 									</div>
 								</div>
 							</div>
