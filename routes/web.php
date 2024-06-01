@@ -22,4 +22,3 @@ Route::get('/gallary', function () {
 Route::get('/application', function () {
     return view('pages.application');
 });
-

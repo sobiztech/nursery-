@@ -54,8 +54,6 @@
 
     @include('layouts.components.scripts')
 
-    
-
 </body>
 
 </html>

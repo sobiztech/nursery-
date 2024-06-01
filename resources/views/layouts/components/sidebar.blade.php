@@ -27,15 +27,15 @@
 						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="#Events"><span class="side-menu__label">நிகழ்வுகள்</span></a>
 						</li>
-						<!-- <li class="slide">
-							<a class="side-menu__item" data-bs-toggle="slide" href="/gallary"target="_blank"><span class="side-menu__label">படங்கள்</span></a>
-						</li> -->
+						<li class="slide">
+							<a class="side-menu__item" data-bs-toggle="slide" href="/gallary" target="_blank"><span class="side-menu__label">படங்கள்</span></a>
+						</li>
 						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="#Contact"><span class="side-menu__label">தொடர்பு</span></a>
 						</li>
 					</ul>
 					<div class="header-nav-right d-flex">
-						<a href="#" target="_blank" class="btn btn-pill btn-primary btn-w-md py-2 my-auto d-lg-none d-xl-block d-block">
+						<a href="/application" target="_blank" class="btn btn-pill btn-primary btn-w-md py-2 my-auto d-lg-none d-xl-block d-block">
 							இலவச பதிவுக்கு
 						</a>
 					</div>

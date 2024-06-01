@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('styles')
 <!-- styles -->
@@ -6,57 +6,123 @@
 
 @section('content')
 
-<div class="col-lg-12 col-md-12">
-    <div class="card">
-        <div class="card-header border-bottom">
-            <h3 class="card-title">Custom Validation</h3>
-        </div>
-        <div class="card-body">
-            <form class="needs-validation" novalidate>
-                <div class="form-row">
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <label for="validationCustom011">First name</label>
-                        <input type="text" class="form-control" id="validationCustom011" value="Mark" required>
-                        <div class="valid-feedback">Looks good!</div>
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-lg-6 col-md-6">
+        <div class="card">
+            <div class="card-header border-bottom">
+                <h3 class="card-title">விண்ணப்பதாரர் விவரங்கள்</h3>
+            </div>
+            <div class="card-body">
+                <form class="needs-validation" name="contact-form" novalidate>
+                    <!-- Child Information -->
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="childFirstName">குழந்தையின் முதல் பெயர்<i style="color: red;"> *</i></label>
+                            <input type="text" class="form-control" id="childFirstName" name="childFirstName" required>
+                            <div class="invalid-feedback">குழந்தையின் முதல் பெயரை வழங்கவும்.</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="childLastName">குழந்தையின் கடைசி பெயர்<i style="color: red;"> *</i></label>
+                            <input type="text" class="form-control" id="childLastName" name="childLastName" required>
+                            <div class="invalid-feedback">குழந்தையின் கடைசி பெயரை வழங்கவும்.</div>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <label for="validationCustom12">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom12" value="Otto" required>
-                        <div class="valid-feedback">Looks good!</div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="childDOB">பிறந்த திகதி<i style="color: red;"> *</i></label>
+                            <input type="date" class="form-control" id="childDOB" name="childDOB" required>
+                            <div class="invalid-feedback">குழந்தையின் பிறந்த தேதியை வழங்கவும்.</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="childGender">பாலினம்<i style="color: red;"> *</i></label>
+                            <select class="form-control" id="childGender" name="childGender" required>
+                                <option value="" disabled selected>தேர்வு செய்யவும்...</option>
+                                <option value="ஆண்">ஆண்</option>
+                                <option value="பெண்">பெண்</option>
+                            </select>
+                            <div class="invalid-feedback">குழந்தையின் பாலினத்தைத் தேர்ந்தெடுக்கவும்.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <label for="validationCustom13">City</label>
-                        <input type="text" class="form-control" id="validationCustom13" required>
-                        <div class="invalid-feedback">Please provide a valid city.</div>
+
+                    <!-- Parent/Guardian Information -->
+                    <h5>பெற்றோர்/பாதுகாவலர் தகவல்கள்</h5>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="parentFirstName">முதல் பெயர்<i style="color: red;"> *</i></label>
+                            <input type="text" class="form-control" id="parentFirstName" name="parentFirstName" required>
+                            <div class="invalid-feedback">உங்கள் முதல் பெயரை வழங்கவும்.</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="parentLastName">கடைசி பெயர்<i style="color: red;"> *</i></label>
+                            <input type="text" class="form-control" id="parentLastName" name="parentLastName" required>
+                            <div class="invalid-feedback">உங்கள் கடைசிப் பெயரை வழங்கவும்.</div>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <label for="validationCustom14">State</label>
-                        <select class="form-select" id="validationCustom14" data-placeholder="select state" required>
-                            <option label="Choose"></option>
-                            <option>New york</option>
-                            <option>USA</option>
-                            <option>Berlin</option>
-                            <option>Manchester</option>
-                            <option>Flynn</option>
-                        </select>
-                        <div class="invalid-feedback">Please select a valid state.</div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="parentEmail">மின்னஞ்சல்</label>
+                            <input type="email" class="form-control" id="parentEmail" name="parentEmail">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="parentPhone">தொலைபேசி எண்<i style="color: red;"> *</i></label>
+                            <input type="tel" class="form-control" id="parentPhone" name="parentPhone" required>
+                            <div class="invalid-feedback">தொலைபேசி எண்ணை வழங்கவும்.</div>
+                        </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-3">
-                        <label for="validationCustom15">Zip</label>
-                        <input type="number" class="form-control" id="validationCustom15" required>
-                        <div class="invalid-feedback">Please provide a valid zip.</div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="parentCountry">நாடு</label>
+                            <input type="text" class="form-control" id="parentCountry" name="parentCountry" value="இலங்கை" readonly>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="parentDistrict">மாவட்டம்</label>
+                            <input type="text" class="form-control" id="parentDistrict" name="parentDistrict" value="யாழ்ப்பாணம்" readonly>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="ckbox">
-                        <input type="checkbox" id="invalidCheck3" required>
-                        <span class="text-13">I agree terms and conditions</span>
-                    </label>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </form>
+
+                    <div class="form-group">
+                        <label class="form-label">வாழும் பகுதி<i style="color: red;"> *</i></label>
+                        <ul>
+                            <li class="select-client">
+                                <select class="form-control select2-style1" name="livingArea" id="livingArea" required>
+                                    <option value="" disabled selected>தேர்வு செய்யவும்...</option>
+                                    <option value="வட்டுக்கோட்டை">வட்டுக்கோட்டை</option>
+                                    <option value="அராலி">அராலி</option>
+                                    <option value="சங்கானை">சங்கானை</option>
+                                    <option value="சுழிபுரம்">சுழிபுரம்</option>
+                                    <option value="மூளாய்">மூளாய்</option>
+                                </select>
+                                <div class="invalid-feedback">வாழும் பகுதியை தேர்ந்தெடுக்கவும்.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Emergency Contact Information -->
+                    <h5>அவசர தொடர்பு தகவல்</h5>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="emergencyContactName">தொடர்பாளரின் பெயர் <i style="color: red;"> *</i></label>
+                            <input type="text" class="form-control" id="emergencyContactName" name="emergencyContactName" required>
+                            <div class="invalid-feedback">அவசர தொடர்பாளரின் பெயரை வழங்கவும்.</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="emergencyContactPhone">அவசர தொலைபேசி எண்<i style="color: red;"> *</i></label>
+                            <input type="tel" class="form-control" id="emergencyContactPhone" name="emergencyContactPhone" required>
+                            <div class="invalid-feedback">அவசர தொடர்பு தொலைபேசி எண்ணை வழங்கவும்.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="ckbox">
+                            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                            <span class="text-13">நான் விதிகள் மற்றும் நிபந்தனைகளை ஒப்புக்கொள்கிறேன்<i style="color: red;"> *</i></span>
+                            <div class="invalid-feedback">சமர்ப்பிக்கும் முன் நீங்கள் ஒப்புக்கொள்ள வேண்டும்.</div>
+                        </label>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="விண்ணப்பத்தை சமர்ப்பிக்கவும்">
+                    <!-- <button class="btn btn-primary" type="submit">விண்ணப்பத்தை சமர்ப்பிக்கவும்</button> -->
+                </form>
+            </div>
         </div>
     </div>
 </div>

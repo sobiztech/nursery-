@@ -55205,7 +55205,7 @@ a.fc-event:hover {
     z-index: 1082;
     left: 0;
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 100%;
     background-color: #8fbd56;
 }
@@ -55241,7 +55241,7 @@ a.fc-event:hover {
 
 .lg-sub-html {
     background-color: rgba(0, 0, 0, 0.45);
-    bottom: 0;
+    bottom: 57px;
     color: #eee;
     font-size: 16px;
     left: 0;
