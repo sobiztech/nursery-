@@ -452,6 +452,197 @@
 </div>
 <!--Support close-->
 
+<!-- Contact-->
+<div class="bg-image-landing bg-white section" id="Application">
+	<div class="container px-5 px-md-0">
+		<div class="row text-center justify-content-center">
+			<div class="col-lg-8">
+				<h3 class="header-family">விண்ணப்பதாரர் விவரங்கள்</h3>
+				<p class="text-default sub-text">எங்கள் குழு உங்களை விரைவாக தொடர்புகொள்ளும்.</p>
+			</div>
+		</div>
+		<div class="d-flex justify-content-center align-items-center">
+			<div class="col-lg-12 col-md-12">
+				<div class="card">
+					<div class="card-body">
+						<form class="needs-validation" name="contact-form" novalidate>
+							<!-- Child Information -->
+							<div class="form-row">
+								<div class="col-md-4 mb-3">
+									<label for="childName">குழந்தையின் பெயர்<i style="color: red;"> *</i></label>
+									<input type="text" class="form-control" id="childName" name="childName" required>
+									<div class="invalid-feedback">குழந்தையின் பெயரை வழங்கவும்.</div>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="parentName">பெற்றோர் பெயர்<i style="color: red;"> *</i></label>
+									<input type="text" class="form-control" id="parentName" name="parentName" required>
+									<div class="invalid-feedback">பெற்றோர் பெயரை வழங்கவும்.</div>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="childDOB">பிறந்த திகதி<i style="color: red;"> *</i></label>
+									<input type="date" class="form-control" id="childDOB" name="childDOB" required>
+									<div class="invalid-feedback">குழந்தையின் பிறந்த தேதியை வழங்கவும்.</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-4 mb-3">
+									<label for="childGender">பாலினம்<i style="color: red;"> *</i></label>
+									<select class="form-control" id="childGender" name="childGender" required>
+										<option value="" disabled selected>தேர்வு செய்யவும்...</option>
+										<option value="ஆண்">ஆண்</option>
+										<option value="பெண்">பெண்</option>
+									</select>
+									<div class="invalid-feedback">குழந்தையின் பாலினத்தைத் தேர்ந்தெடுக்கவும்.</div>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="parentEmail">மின்னஞ்சல்</label>
+									<input type="email" class="form-control" id="parentEmail" name="parentEmail">
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="parentPhone">தொலைபேசி எண்<i style="color: red;"> *</i></label>
+									<input type="tel" class="form-control" id="parentPhone" name="parentPhone" required>
+									<div class="invalid-feedback">தொலைபேசி எண்ணை வழங்கவும்.</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md-4 mb-3">
+									<label for="parentCountry">நாடு</label>
+									<input type="text" class="form-control" id="parentCountry" name="parentCountry" value="இலங்கை" readonly>
+								</div>
+								<div class="col-md-4 mb-3">
+									<label for="parentDistrict">மாவட்டம்</label>
+									<input type="text" class="form-control" id="parentDistrict" name="parentDistrict" value="யாழ்ப்பாணம்" readonly>
+								</div>
+								<div class="col-md-4 mb-3 form-group">
+									<label for="livingArea">வாழும் பகுதி<i style="color: red;"> *</i></label>
+									<select class="form-control select2-style1" name="livingArea" id="livingArea" required>
+										<option value="" disabled selected>தேர்வு செய்யவும்...</option>
+										<option value="வட்டுக்கோட்டை">வட்டுக்கோட்டை</option>
+										<option value="அராலி">அராலி</option>
+										<option value="சங்கானை">சங்கானை</option>
+										<option value="சுழிபுரம்">சுழிபுரம்</option>
+										<option value="மூளாய்">மூளாய்</option>
+									</select>
+									<div class="invalid-feedback">வாழும் பகுதியை தேர்ந்தெடுக்கவும்.</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<label class="ckbox">
+									<input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+									<span class="text-13">நான் விதிகள் மற்றும் நிபந்தனைகளை ஒப்புக்கொள்கிறேன்<i style="color: red;"> *</i></span>
+									<div class="invalid-feedback">சமர்ப்பிக்கும் முன் நீங்கள் ஒப்புக்கொள்ள வேண்டும்.</div>
+								</label>
+							</div>
+							<input class="btn btn-primary" type="submit" value="விண்ணப்பத்தை சமர்ப்பிக்கவும்">
+							<!-- <button class="btn btn-primary" type="submit">விண்ணப்பத்தை சமர்ப்பிக்கவும்</button> -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="row">
+			<div class="card mt-3 mb-0">
+				<div class="card-body text-dark px-0 pb-0">
+					<div class="statistics-info">
+						<div class="col-xl-12 col-12">
+							<div class="row">
+								<div class="col-xl-6 col-md-12 col-sm-12">
+									<div class="services-statistics">
+										<div class="row">
+											<div class="col-6">
+												<div class="card p-0">
+													<div class="card-body p-0">
+														<div class="row">
+															<div class="col-xl-3 col-md-3 col-sm-3">
+																<div class="counter-icon border border-primary text-primary">
+																	<i class="fe fe-map-pin"></i>
+																</div>
+															</div>
+															<div class="col-xl-9 col-md-9 px-0 mb-1 col-sm-9">
+																<h5 class="mb-1 fw-semibold">பிரதான கிளை</h5>
+																<p class="fs-13 text-muted">வட்டுக்கோட்டை-மூளாய் வீதி, மூளாய், இலங்கை
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="card p-0">
+													<div class="card-body p-0">
+														<div class="row">
+															<div class="col-xl-3 col-md-3 col-sm-3">
+																<div class="counter-icon border border-primary text-primary">
+																	<i class="fe fe-headphones"></i>
+																</div>
+															</div>
+															<div class="col-xl-6 col-md-9 px-0 mb-1 col-sm-9">
+																<h5 class="mb-1 fw-semibold">தொலைபேசி</h5>
+																<p class="mb-0 fs-13 text-muted">021-2224528
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="card p-0">
+													<div class="card-body p-0">
+														<div class="row">
+															<div class="col-xl-3 col-md-3 col-sm-3">
+																<div class="counter-icon border border-primary text-primary">
+																	<i class="fe fe-mail"></i>
+																</div>
+															</div>
+															<div class="col-xl-6 col-md-9 px-0 mb-1 col-sm-9">
+																<h5 class="mb-1 fw-semibold">மின்னஞ்சல்</h5>
+																<p class="mb-0 fs-13 text-muted">vaddupreschool@gmail.com
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="card p-0">
+													<div class="card-body p-0">
+														<div class="row">
+															<div class="col-xl-3 col-md-3 col-sm-3">
+																<div class="counter-icon border border-primary text-primary">
+																	<i class="fe fe-airplay"></i>
+																</div>
+															</div>
+															<div class="col-xl-6 col-md-9 px-0 mb-1 col-sm-9">
+																<h5 class="mb-1 fw-semibold">வேலை நேரம்</h5>
+																<p class="mb-0 fs-13 text-muted">திங்கள் - வெள்ளி: 9am
+																	- 6pm</p>
+																<p class="fs-13 text-muted">சனி - ஞாயிறு: விடுமுறை
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-md-12 col-sm-12">
+									<div class="">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15729.238065742084!2d79.9356223698399!3d9.7398277807206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe52e98d542dcb%3A0x8bad045e1da0295f!2sJaffna%20College!5e0!3m2!1sen!2slk!4v1717053484301!5m2!1sen!2slk" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</div>
+<!--Contact close-->
+
 @endsection
 
 @section('modal')

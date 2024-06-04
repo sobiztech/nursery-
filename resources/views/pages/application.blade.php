@@ -17,14 +17,14 @@
                     <!-- Child Information -->
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
-                            <label for="childFirstName">குழந்தையின் முதல் பெயர்<i style="color: red;"> *</i></label>
+                            <label for="childFirstName">குழந்தையின் பெயர்<i style="color: red;"> *</i></label>
                             <input type="text" class="form-control" id="childFirstName" name="childFirstName" required>
-                            <div class="invalid-feedback">குழந்தையின் முதல் பெயரை வழங்கவும்.</div>
+                            <div class="invalid-feedback">குழந்தையின் பெயரை வழங்கவும்.</div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="childLastName">குழந்தையின் கடைசி பெயர்<i style="color: red;"> *</i></label>
+                            <label for="childLastName">பெற்றோர்/பாதுகாவலர் பெயர்<i style="color: red;"> *</i></label>
                             <input type="text" class="form-control" id="childLastName" name="childLastName" required>
-                            <div class="invalid-feedback">குழந்தையின் கடைசி பெயரை வழங்கவும்.</div>
+                            <div class="invalid-feedback">பெற்றோர்/பாதுகாவலர் பெயரை வழங்கவும்.</div>
                         </div>
                     </div>
                     <div class="form-row">
@@ -44,20 +44,6 @@
                         </div>
                     </div>
 
-                    <!-- Parent/Guardian Information -->
-                    <h5>பெற்றோர்/பாதுகாவலர் தகவல்கள்</h5>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="parentFirstName">முதல் பெயர்<i style="color: red;"> *</i></label>
-                            <input type="text" class="form-control" id="parentFirstName" name="parentFirstName" required>
-                            <div class="invalid-feedback">உங்கள் முதல் பெயரை வழங்கவும்.</div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="parentLastName">கடைசி பெயர்<i style="color: red;"> *</i></label>
-                            <input type="text" class="form-control" id="parentLastName" name="parentLastName" required>
-                            <div class="invalid-feedback">உங்கள் கடைசிப் பெயரை வழங்கவும்.</div>
-                        </div>
-                    </div>
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="parentEmail">மின்னஞ்சல்</label>
@@ -95,21 +81,6 @@
                                 <div class="invalid-feedback">வாழும் பகுதியை தேர்ந்தெடுக்கவும்.</div>
                             </li>
                         </ul>
-                    </div>
-
-                    <!-- Emergency Contact Information -->
-                    <h5>அவசர தொடர்பு தகவல்</h5>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="emergencyContactName">தொடர்பாளரின் பெயர் <i style="color: red;"> *</i></label>
-                            <input type="text" class="form-control" id="emergencyContactName" name="emergencyContactName" required>
-                            <div class="invalid-feedback">அவசர தொடர்பாளரின் பெயரை வழங்கவும்.</div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="emergencyContactPhone">அவசர தொலைபேசி எண்<i style="color: red;"> *</i></label>
-                            <input type="tel" class="form-control" id="emergencyContactPhone" name="emergencyContactPhone" required>
-                            <div class="invalid-feedback">அவசர தொடர்பு தொலைபேசி எண்ணை வழங்கவும்.</div>
-                        </div>
                     </div>
 
                     <div class="form-group">

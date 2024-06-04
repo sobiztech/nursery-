@@ -35,7 +35,7 @@
 						</li>
 					</ul>
 					<div class="header-nav-right d-flex">
-						<a href="/application" target="_blank" class="btn btn-pill btn-primary btn-w-md py-2 my-auto d-lg-none d-xl-block d-block">
+						<a href="#Application" class="btn btn-pill btn-primary btn-w-md py-2 my-auto d-lg-none d-xl-block d-block">
 							இலவச பதிவுக்கு
 						</a>
 					</div>
